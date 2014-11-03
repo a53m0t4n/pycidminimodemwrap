@@ -57,7 +57,6 @@ class CIDLogger:
 	def formatDT(self,
 		     dt):
 		if len(dt) == 9:
-			print str(dt)
 			hr = int(dt[5:7])
 			ampm = 'AM'
 			if hr >= 13:
@@ -147,7 +146,6 @@ if __name__ == "__main__":
 		p = subprocess.Popen(['minimodem',
 				      '--rx',
 				      '--binary-output',
-				      '--print-filter',
 				      '1200',
 				      '--ascii',
 				      '-f',
