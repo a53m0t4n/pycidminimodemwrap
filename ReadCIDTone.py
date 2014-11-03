@@ -5,8 +5,9 @@ import sys
 a wrapper around minimodem with binary output turned on
 to process demodulated CID bytes
 
-#a hack since minimodem's callerid sdmf demodulation is not working for me
-#on files which have more than one callerid data burst in them, or with trailing junk chars
+an alternative since minimodem's callerid sdmf demodulation is not working for me
+on files which have more than one callerid data burst in them, or on some other occasions for some reason
+but it is demodulating the bytes themselves perfectly in Bell Type 202
 
 based on specs provided at https://hkn.eecs.berkeley.edu/~drake/callsense/callerid.html
 """
