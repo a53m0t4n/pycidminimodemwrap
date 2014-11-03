@@ -23,4 +23,4 @@ always come around with the results expected by minimodem to pass as "callerid" 
 minimodem's 1200 bell 202 mode. This script just interprets the binary output and handles it differently (?) than minimodem.
 
 
-ReadCIDTone.py [file.wav]
+python ReadCIDTone.py [file.wav]
