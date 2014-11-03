@@ -20,5 +20,4 @@ Minimodem is one of my favorite programs in existence, and I have done 2 cool pr
 my phone getting incoming phone calls while on the hook (with my $20 RJ411 to audio out bridge + voice recorder from ali express) 
 and using minimodem's '-a callerid' flag I had spotty results since my sound files contained multiple FSK databursts, or did not 
 always come around with the results expected by minimodem to pass as "callerid" specifically, but the bytes were being properly demodulated on
-minimodem's 1200 bell 202 mode. This script just interprets the binary output and handles it in what I'm assuming (I shamefully have not 
-verified this personally) is a different way than how minimodem implements the MDMF format.
+minimodem's 1200 bell 202 mode. This script just interprets the binary output and handles it differently (?) than minimodem.
