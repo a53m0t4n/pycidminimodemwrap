@@ -21,3 +21,6 @@ my phone getting incoming phone calls while on the hook (with my $20 RJ411 to au
 and using minimodem's '-a callerid' flag I had spotty results since my sound files contained multiple FSK databursts, or did not 
 always come around with the results expected by minimodem to pass as "callerid" specifically, but the bytes were being properly demodulated on
 minimodem's 1200 bell 202 mode. This script just interprets the binary output and handles it differently (?) than minimodem.
+
+
+ReadCIDTone.py [file.wav]
