@@ -5,7 +5,7 @@ import sys
 a wrapper around minimodem with binary output turned on
 to process demodulated CID bytes
 
-an alternative since minimodem's callerid mdmf demodulation is not working for me
+an alternative since minimodem's callerid sdmf demodulation is not working for me
 on files which have more than one callerid data burst in them, or on some other occasions for some reason
 but it is demodulating the bytes themselves perfectly in Bell Type 202
 
@@ -59,11 +59,14 @@ class CIDLogger:
 		if len(dt) == 9:
 			print str(dt)
 			hr = int(dt[5:7])
+			ampm = 'AM'
 			if hr >= 13:
 			      hr -= 12
+			      ampm = 'PM'
 			if hr <= 0:
 			      return 'N/A'
-			return '%s/%s @ Time %s' % (dt[:3], dt[2:3], str(hr) + ':' + dt[7:9])
+			r = '%s/%s @ Time %s' + ampm
+			return r % (dt[:3], dt[2:3], str(hr) + ':' + dt[7:9])
 		else:
 			return 'N/A'
 	def ProcessData(self):
