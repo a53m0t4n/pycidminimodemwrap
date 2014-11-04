@@ -3,7 +3,7 @@ This project is wrapped around minimodem by Kamal Mostafa.
 http://www.whence.com/minimodem/
 
 
-Ever since I was a kid I wondered specifically howcaller id worked. This weekend I was able to learn
+Ever since I was a kid I wondered specifically how caller id worked. This weekend I was able to learn
 more about it in great detail.
 
 How is caller id passed in North America?
