@@ -1,4 +1,8 @@
-The fix for the minor callerid bug this project demonstrated was incorporated into the latest minimodem which you should compile from https://github.com/kamalmostafa/minimodem. Everything was implemented almost perfectly except for an unencountered case on my verizon landline (Bridge St. DS0, is this common everywhere or specific to me?) in which a number is passed, but since the name is unavailable an 0x08 ascii backspace char is passed in lieu of a name.
+The fix for the minor callerid bug this project demonstrated was incorporated into the latest minimodem which you should compile from https://github.com/kamalmostafa/minimodem. 
+
+Turns out I was using wierd flags on minimodem, which fixed half the problem.
+
+Everything was implemented almost perfect in minimodem as is except for a case unencountered by minimodem's author, on my verizon landline (Bridge St. DS0, is this common everywhere or specific to me?) in which a CPN number is passed, but since the name is unavailable, an 0x08 ascii backspace char is passed in lieu of a name. Problem solved.
 
 
 
