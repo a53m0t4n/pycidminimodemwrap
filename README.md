@@ -1,4 +1,4 @@
-The fix for the minor callerid bug this project demonstrated was incorporated into the latest minimodem which you should compile from https://github.com/kamalmostafa/minimodem. 
+The fix for a minor unexpected case in callerid this project demonstrated was incorporated into the latest minimodem which you should compile from https://github.com/kamalmostafa/minimodem. 
 
 Turns out I was using wierd flags (-a is autocarrier for poorer audio conditions as found in DXing and HAM i.e, RTTY) on minimodem, removing this as per Kamal's suggestion fixed half the problem.
 
