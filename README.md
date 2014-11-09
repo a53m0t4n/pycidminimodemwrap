@@ -2,10 +2,9 @@ The fix for a minor unexpected case in callerid this project demonstrated was in
 
 Turns out I was using wierd flags (-a is autocarrier for poorer audio conditions as found in DXing and HAM i.e, RTTY) on minimodem, removing this as per Kamal's suggestion fixed half the problem.
 
-Everything was implemented almost perfect in minimodem as is except for a case unencountered by minimodem's author, on my verizon landline (Bridge St. DS0, is this common everywhere or specific to me?) in which a CPN number is passed, but since the name is unavailable, an 0x08 ascii backspace char is passed in lieu of a name. Problem solved.
-
-
-
+The problem in minimodem had something to do with the following if I'm not mistaken:
+" In Figure 4, if the number and name had not been included then the parameter types for those fields would be different. These alternate parameter types are used to signify that the data contained in that parameter is the reason for its absence. The parameter type for the number section would have been a binary 00000100 (decimal 4) and the parameter type for the name section would have been a binary 00001000 (decimal 8)..."
+https://hkn.eecs.berkeley.edu/~drake/callsense/callerid.html
 
 
 ====================================================================================
