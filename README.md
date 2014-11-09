@@ -1,3 +1,11 @@
+The fix for the minor callerid bug this project demonstrated was incorporated into the latest minimodem which you should compile from https://github.com/kamalmostafa/minimodem. Everything was implemented almost perfectly except for an unencountered case on my verizon landline (Bridge St. DS0, is this common everywhere or specific to me?) in which a number is passed, but since the name is unavailable an 0x08 ascii backspace char is passed in lieu of a name.
+
+
+
+
+
+====================================================================================
+
 
 This project is wrapped around minimodem by Kamal Mostafa.
 http://www.whence.com/minimodem/
